@@ -8,5 +8,5 @@
 /*
  * Custom
  */
-//= partials/button.js
+//= partials/menu.js
 //= partials/plugins.js

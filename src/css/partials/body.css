@@ -1,0 +1,23 @@
+/*--------------------------------------------------------------
+ГЛАВНАЯ СТРАНИЦА
+--------------------------------------------------------------*/
+
+/** {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}*/
+body {
+	font-family: 'Roboto', Arial, sans-serif;
+	font-size: 18px;
+	color: #ffffff;
+	line-height: 1.5em;
+	position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto', Arial, sans-serif;
+}
+ul {
+	padding: 0;
+}

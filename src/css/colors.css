@@ -1,10 +1,21 @@
 $blue: #00C6FF;
 $white: #ffffff;
+$green: #1cff94;
 $back: #111133;
 $backmenu: #252830;
-@media screen and (min-width: 321px) {
-	
-}
+// Small devices (landscape phones, 34em and up)
+@media (min-width: 20em) { ... }/320px
+@media (min-width: 20.1em)
+@media (min-width: 34em) { ... }/544
+
+// Medium devices (tablets, 48em and up)/768
+@media (min-width: 48em) { ... }
+
+// Large devices (desktops, 62em and up)/992
+@media (min-width: 62em) { ... }
+
+// Extra large devices (large desktops, 75em and up)/1248
+@media (min-width: 75em) { ... }
 
 
 

@@ -1,3 +1,7 @@
+$blue: #00C6FF;
+$white: #ffffff;
+$back: #111133;
+$backmenu: #252830;
 /*--------------------------------------------------------------
 ГЛАВНАЯ СТРАНИЦА
 --------------------------------------------------------------*/
@@ -11,13 +15,17 @@ body {
 	font-family: 'Roboto', Arial, sans-serif;
 	font-size: 18px;
 	color: #ffffff;
-	line-height: 1.5em;
-	position: relative;
-}
-
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Roboto', Arial, sans-serif;
+	/*line-height: 1.5em;*/
+	/*position: relative;*/
 }
 ul {
 	padding: 0;
+}
+/*
+*ШАПКА ГЛАВНОЙ
+*/
+.home-header {
+	height: 400px;
+	background-color: #2f3551;
+
 }

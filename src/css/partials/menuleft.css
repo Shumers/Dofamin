@@ -1,0 +1,154 @@
+$blue: #00C6FF;
+$white: #ffffff;
+$back: #111133;
+$backmenu: #252830;
+
+/*
+*ГЕКСАГОН ДЛЯ ОТКРЫТИЯ ОСНОВНОГО МЕНЮ СКРЫТОЕ СЛЕВА
+*/
+.navOpen {
+	overflow: hidden;
+}
+#menuBtn svg { 
+	display: block;
+}
+
+#menuBtn:hover svg polygon, 
+.openNav:hover  {
+	-webkit-animation: hexHover 0.7s;
+	animation: hexHover 0.7s;
+}
+
+@-webkit-keyframes hexHover {
+	0% {
+		stroke-dasharray: 0, 0, 300;
+	}
+	10% {
+		stroke-dasharray: 0, 20, 300;
+	}
+	100% {
+		stroke-dasharray: 300, 20, 300;
+	}
+}
+@keyframes hexHover {
+	0% {
+		stroke-dasharray: 0, 0, 300;
+	}
+	10% {
+		stroke-dasharray: 0, 20, 300;
+	}
+	100% {
+		stroke-dasharray: 300, 20, 300;
+	}
+}
+.active #menuBtn:hover svg polygon {
+	-webkit-animation: none;
+	animation: none;
+}
+.openNav {
+	transition-duration: 0.5s;
+	transition-timing-function: swing;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	z-index: 1000;
+}
+@media screen and (min-width: 321px) {
+	.openNav {
+		top: 25px;
+		left: 25px;
+		}
+}
+.openNav:hover {
+	cursor: pointer;
+}
+.openNav .icon {
+	transition-duration: 0.2s;
+	position: absolute;
+	width: 30px;
+	height: 2px;
+	background-color: $blue;
+	top: 24px;
+	left: 10px;
+}
+.openNav .icon:before,
+.openNav .icon:after {
+	transition-duration: 0.5s;
+	background-color: $blue;
+	position: absolute;
+	content: "";
+	width: 30px;
+	height: 2px;
+	left: 0px;
+}
+.openNav .icon:before {
+	top: -7px;
+}
+.openNav .icon:after {
+	top: 7px;
+}
+.openNav.open {
+	transform: translateX(250px) translateY(0);
+	-webkit-transform: translateX(250px) translateY(0);
+}
+.openNav.open .icon {
+	background-color: transparent;
+}
+.openNav.open .icon:before,
+.openNav.open .icon:after {
+	top: 0;
+}
+.openNav.open .icon:before {
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+}
+.openNav.open .icon:after {
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+
+/*
+*ОСНОВНОЕ МЕНЮ СКРЫТОЕ СЛЕВА
+*/
+.menu-left__background {
+	background-color: $backmenu;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+
+.menu-left__menu {
+	width: 250px;
+	margin-top: 1em;
+	
+		&:hover a {
+			color: rgba(255, 255, 255, 0.5);
+		}
+		
+		li {
+		text-transform: uppercase;
+		font-size: 1em;
+		transition-duration: 0.25s;
+/*		display: block;*/
+		padding: .25em 1em;
+		letter-spacing: 0.05em;
+		text-align: right;
+			
+			a {
+				text-decoration: none;
+				cursor: pointer;
+				color: $white;
+				
+				&:hover {
+				cursor: pointer;
+				color: $blue;
+			}
+
+			}
+		}
+}
+

@@ -56,7 +56,16 @@ gulp.task('html:bower', function () {
             })) //Забивает ссылки фреймворков в *.html <!-- bower:css/js --><!-- endbower -->
         .pipe(gulp.dest('./src/html')) //Выплюнем их в папку src
 });
+gulp.task('copy:bower0', function () {
+        return gulp.src('./src/bower_components/normalize.css/normalize.css') //Выберем файлы по нужному пути
+        .pipe(gulp.dest('./dist/css')) //Выплюнем их в папку
 
+});
+gulp.task('copy:bower1', function () {
+        return gulp.src('./src/bower_components/jquery/dist/jquery.min.js') //Выберем файлы по нужному пути
+        .pipe(gulp.dest('./dist/js')) //Выплюнем их в папку
+
+});
 
 //Собираем html 
 gulp.task('html', function () {

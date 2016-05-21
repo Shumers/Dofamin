@@ -4,14 +4,16 @@
 $blue: #00C6FF;
 $white: #ffffff;
 $green: #1cff94;
-$back: #111133;
+$back2: #111133;
+$back3: #0B0B21;
 $backmenu: #252830;
 
 /*
 *ЛЕНТА СТАТЕЙ НА ГЛАВНОЙ
 */
 .home-article {
-	background-color: #2f3551;
+	background-color: $back3;
 	padding: 1em;
+	height: 500px;
 	
 }

@@ -1,7 +1,8 @@
 $blue: #00C6FF;
 $white: #ffffff;
 $green: #1cff94;
-$back: #111133;
+$back2: #111133;
+$back3: #0B0B21;
 $backmenu: #252830;
 // Small devices (landscape phones, 34em and up)
 @media (min-width: 20em) { ... }/320px
@@ -22,5 +23,30 @@ $backmenu: #252830;
 color: #00C6FF;
 color: #1cff94;
 
+
 color: #1ca8dd;
-color: #1bc98e
+color: #1bc98e;
+background: #1d2123;
+background: #2a2c44;
+background: #5876A3;
+background: #29333f;
+background-color: #222E38;
+background-color: #375a7f;
+background-color: #384555;
+background: #2e3a48;
+    color: #a7b3cb;
+color: #c9ced0;/*цвет текста*/
+
+.home-category:after {
+    content: "⬢";
+    display: block;
+    color: #1cff94;
+    font-size: 65px;
+    text-align: center;
+    position: relative;
+    top: 60px;
+    transform: rotate(90deg);
+}
+меню: 'Monitorica';
+кнопки,текст: 'Aleksandrac'
+заголовки 'Roboto'

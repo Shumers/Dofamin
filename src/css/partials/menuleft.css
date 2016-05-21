@@ -138,6 +138,7 @@ $backmenu: #252830;
 		padding: .25em 1em;
 		letter-spacing: 0.05em;
 		text-align: right;
+		font-family: 'Monitorica', sans-serif, arial;
 			
 			a {
 				text-decoration: none;
@@ -152,4 +153,31 @@ $backmenu: #252830;
 			}
 		}
 }
-
+@media (min-width: 20.1em) {
+    .menu-left__menu {
+    	li {
+			font-size: 1.2em;
+    	}
+    }
+}
+@media (min-width: 34em) {
+    .menu-left__menu {
+    	li {
+			font-size: 1.3em;
+    	}
+    }
+}
+@media (min-width: 48em) {
+    .menu-left__menu {
+    	li {
+			font-size: 1.4em;
+    	}
+    }
+}
+@media (min-width: 62em){
+	.menu-left__menu {
+		li {
+			font-size: 1.6em;
+		}
+	}
+}
